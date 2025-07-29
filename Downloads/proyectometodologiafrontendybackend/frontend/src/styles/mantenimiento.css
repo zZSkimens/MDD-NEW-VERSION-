@@ -1,0 +1,206 @@
+body {
+  background: #f6f8fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.mantenimiento-container {
+  min-width: 500px;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+}
+
+.mantenimiento-container h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.mantenimiento-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.mantenimiento-form input[type="text"] {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f1f5f9;
+  transition: border 0.2s;
+}
+.mantenimiento-form input[type="text"]:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}
+
+.mantenimiento-form button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.mantenimiento-form button:hover {
+  background: #2563eb;
+}
+
+.mantenimiento-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mantenimiento-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.mantenimiento-card b {
+  color: #2d3748;
+}
+
+.mantenimiento-card select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.mantenimiento-card button {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background: #38a169;
+  color: #fff;
+  transition: background 0.2s;
+}
+.mantenimiento-card button:hover {
+  background: #2f855a;
+}
+.mantenimiento-card button:last-child {
+  background: #e53e3e;
+  margin-right: 0;
+}
+.mantenimiento-card button:last-child:hover {
+  background: #b91c1c;
+}
+
+.mantenimiento-card .estado {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.mantenimiento-card .fechas {
+  font-size: 0.95rem;
+  color: #718096;
+}
+
+.mantenimiento-list p {
+  text-align: center;
+  color: #a0aec0;
+  font-size: 1.1rem;
+}
+button:disabled {
+  opacity: 0.35;
+}
+
+.rating-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.rating-section p {
+  margin: 0;
+}
+
+.rating-inputs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-inputs input {
+  margin: 0;
+  background: url("https://cdn-icons-png.flaticon.com/512/1828/1828884.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment-input textarea {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.035);
+  padding: 1rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.mantenimiento-card .rating-section .submit-rating {
+  background-color: #38a169;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.rating-stars {
+  margin: 0;
+}

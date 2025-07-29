@@ -1,0 +1,123 @@
+.opiniones-container {
+  max-width: 700px;
+  width: 80%;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+}
+
+.opinion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.opinion-form textarea {
+  resize: vertical;
+  min-height: 60px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  background: #f7f7fa;
+}
+.opinion-form button {
+  align-self: flex-end;
+  padding: 8px 24px;
+  background: #219150;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.opinion-form button:disabled {
+  background: #b2bec3;
+  cursor: not-allowed;
+}
+
+.opiniones-list {
+  margin-top: 12px;
+}
+
+/* Vista foro para usuarios */
+.opinion-item {
+  background: #f7f7fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  margin-bottom: 18px;
+  padding: 18px 16px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.opinion-item:hover {
+  box-shadow: 0 2px 12px rgba(33, 145, 80, 0.08);
+}
+.opinion-item > div {
+  font-size: 0.95rem;
+  color: #636e72;
+  margin-bottom: 6px;
+}
+.opinion-item p {
+  font-size: 1.08rem;
+  color: #2d3a4a;
+  margin: 0;
+}
+
+/* Botón eliminar para admin */
+.delete-btn {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.delete-btn:hover {
+  background: #e74c3c;
+}
+.delete-btn.danger {
+  background: #b71c1c;
+}
+
+/* Tabla compacta para admin */
+.opiniones-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7f7fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+}
+.opiniones-table th,
+.opiniones-table td {
+  padding: 10px 12px;
+  text-align: left;
+}
+.opiniones-table th {
+  background: #219150;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #dfe6e9;
+}
+.opiniones-table tr {
+  border-bottom: 1px solid #dfe6e9;
+}
+.opiniones-table tr:last-child {
+  border-bottom: none;
+}
+.opiniones-table td {
+  font-size: 1rem;
+  color: #2d3a4a;
+}
+.opiniones-table .delete-btn {
+  margin: 0;
+  padding: 5px 14px;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,425 @@
+.areas-section {
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 #0001;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+}
+
+.areas-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2d3a4a;
+}
+
+.areas-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.areas-table th,
+.areas-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.areas-table th {
+  background: #e3eaf3;
+  color: #2d3a4a;
+  font-weight: 600;
+}
+
+.areas-table tr:last-child td {
+  border-bottom: none;
+}
+
+.areas-table td {
+  color: #3a4a5a;
+}
+
+.areas-table .danger {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.areas-table button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.areas-table button:hover {
+  background: #217dbb;
+}
+
+.areas-table .danger:hover {
+  background: #c0392b;
+}
+
+.area-form-section {
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 1px 6px 0 #0001;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.area-form-section h3 {
+  text-align: center;
+  color: #2d3a4a;
+  margin-bottom: 1rem;
+}
+
+.area-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.area-form input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #bfc9d1;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  color: #2d3a4a;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.area-form input:focus {
+  border: 1.5px solid #3498db;
+}
+
+.area-form button {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.area-form button[type="button"] {
+  background: #b2bec3;
+  margin-left: 0.5rem;
+}
+
+.area-form button:hover {
+  background: #219150;
+}
+
+.area-form button[type="button"]:hover {
+  background: #636e72;
+}
+
+.catalogo-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.area-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.area-card:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+}
+
+.area-card-header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.area-card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #1a237e;
+}
+
+.area-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.area-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.area-card-desc {
+  margin-top: 0.7rem;
+  font-size: 0.98rem;
+  color: #555;
+  min-height: 2.2em;
+}
+
+.area-card-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.area-card-actions button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.area-card-actions button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.area-card-actions button:hover:not(:disabled) {
+  background: #0d47a1;
+}
+
+.catalogo-vacio {
+  color: #888;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+.area-capacidad,
+.area-ocupados,
+.area-estado,
+.area-disponibilidad {
+  display: block;
+}
+
+/* ADMIN TABLE IMPROVEMENTS */
+.admin-areas-table-wrapper {
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+}
+.admin-table {
+  font-size: 1.08rem;
+  background: #f6fafd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px #0001;
+}
+.admin-area-row {
+  transition: background 0.15s;
+}
+.admin-area-row:hover {
+  background: #e3f2fd;
+}
+.admin-area-nombre {
+  font-weight: 600;
+  color: #1a237e;
+  letter-spacing: 0.5px;
+}
+.admin-area-capacidad {
+  color: #1976d2;
+  font-weight: 500;
+}
+.admin-area-estado {
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.3em 0.7em;
+  background: #e0e0e0;
+  color: #333;
+  min-width: 90px;
+}
+.admin-area-estado.disponible {
+  background: #e8f5e9;
+  color: #219150;
+}
+.admin-area-estado.ocupado {
+  background: #ffebee;
+  color: #c0392b;
+}
+.admin-area-disponibilidad {
+  text-align: center;
+  font-size: 1.01rem;
+}
+.admin-fechas {
+  display: inline-block;
+  background: #f1f8e9;
+  border-radius: 6px;
+  padding: 0.2em 0.7em;
+  color: #33691e;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.admin-fechas.indefinido {
+  background: #fbe9e7;
+  color: #b71c1c;
+}
+.admin-area-desc {
+  font-size: 0.98rem;
+  color: #555;
+  max-width: 220px;
+  white-space: pre-line;
+}
+.admin-area-acciones {
+  text-align: center;
+}
+.admin-btn-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.admin-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.admin-btn.editar {
+  background: #43a047;
+}
+.admin-btn.eliminar {
+  background: #e74c3c;
+  margin: 0;
+}
+.admin-btn:hover {
+  filter: brightness(0.95);
+}
+.admin-btn.eliminar:hover {
+  background: #c0392b;
+}
+.admin-btn.editar:hover {
+  background: #2e7d32;
+}
+
+/* MODAL PARA FORMULARIO DE ÁREA ADMIN */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 62, 80, 0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: modalFadeIn 0.2s;
+}
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-area-form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px 0 #0002;
+  padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+  min-width: 320px;
+  max-width: 95vw;
+  min-height: 100px;
+  position: relative;
+  animation: modalPopIn 0.18s;
+}
+@keyframes modalPopIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.modal-area-form h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.25rem;
+  color: #1a237e;
+}
+.modal-area-form .area-form {
+  gap: 1.1rem;
+}
+.modal-area-form button[type="submit"] {
+  background: #27ae60;
+}
+.modal-area-form button[type="button"] {
+  background: #b2bec3;
+}
+.modal-area-form button[type="submit"]:hover {
+  background: #219150;
+}
+.modal-area-form button[type="button"]:hover {
+  background: #636e72;
+}
+
+.admin-reservas-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+.admin-reservas-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2d3a4a;
+}
+
+@media (max-width: 700px) {
+  .areas-section {
+    padding: 1rem 0.5rem;
+  }
+  .areas-table th,
+  .areas-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+  .area-form-section {
+    padding: 1rem 0.2rem;
+  }
+}
